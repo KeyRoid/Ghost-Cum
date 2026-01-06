@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="ja" data-lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Terms of Use | Keyroid</title>
+  <meta name="description" content="Terms of Use (JP/EN)" />
+  <style>
+    :root{
+      --bg:#0b0d12; --panel:#101522; --text:#eef2ff; --muted:#a7b0c4;
+      --line:rgba(255,255,255,.10); --accent:#8fb2ff; --radius:16px; --max:960px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; color:var(--text);
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans JP", "Hiragino Sans", Arial;
+      background:
+        radial-gradient(1200px 800px at 50% -10%, rgba(143,178,255,.18), transparent 55%),
+        radial-gradient(900px 700px at 10% 30%, rgba(43,97,255,.12), transparent 60%),
+        linear-gradient(180deg, #070911 0%, #0b0d12 35%, #070911 100%);
+    }
+    header{
+      position:sticky; top:0; z-index:10;
+      backdrop-filter: blur(10px);
+      background: rgba(7,9,17,.65);
+      border-bottom:1px solid var(--line);
+    }
+    .wrap{max-width:var(--max); margin:0 auto; padding:16px}
+    .topbar{display:flex; align-items:center; justify-content:space-between; gap:12px}
+    .brand{display:flex; align-items:center; gap:10px}
+    .logo{width:28px;height:28px;border-radius:10px;background:linear-gradient(135deg, rgba(143,178,255,.85), rgba(43,97,255,.75));box-shadow:0 10px 30px rgba(43,97,255,.25)}
+    .title{font-weight:800; letter-spacing:.4px}
+    .nav{display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end}
+    .chip{
+      padding:8px 10px; border:1px solid var(--line);
+      background: rgba(16,21,34,.6); border-radius:999px;
+      color:var(--text); font-size:13px; text-decoration:none;
+    }
+    .chip:hover{border-color: rgba(143,178,255,.35)}
+    .btn{
+      border:1px solid var(--line);
+      background: rgba(16,21,34,.6);
+      color:var(--text);
+      padding:8px 10px;
+      border-radius:12px;
+      cursor:pointer;
+      font-weight:700;
+      font-size:13px;
+    }
+    .btn[aria-pressed="true"]{background: rgba(143,178,255,.92); color:#0b0d12; border-color: transparent;}
+    main{padding:26px 0}
+    .card{
+      border:1px solid var(--line);
+      background: rgba(16,21,34,.62);
+      border-radius: var(--radius);
+      padding: 22px;
+      box-shadow: 0 16px 50px rgba(0,0,0,.35);
+    }
+    h1{margin:0 0 8px; font-size:26px}
+    .sub{color:var(--muted); font-size:13px; margin:0 0 18px}
+    h2{margin:22px 0 10px; font-size:16px}
+    p,li{color:rgba(238,242,255,.92); line-height:1.75}
+    ul{padding-left:18px; margin:10px 0}
+    .hr{height:1px; background:var(--line); margin:18px 0}
+    .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;}
+    footer{padding:20px 0 40px; color:var(--muted); font-size:12px}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap topbar">
+    <div class="brand">
+      <div class="logo" aria-hidden="true"></div>
+      <div class="title">Keyroid Legal</div>
+    </div>
+    <div class="nav">
+      <a class="chip" href="index.html" data-i18n="nav_home">Index</a>
+      <a class="chip" href="terms.html" data-i18n="nav_terms">Terms</a>
+      <a class="chip" href="tokusho.html" data-i18n="nav_tokusho">Tokusho</a>
+      <a class="chip" href="privacy.html" data-i18n="nav_privacy">Privacy</a>
+      <button class="btn" id="btn-ja" type="button" aria-pressed="true">JP</button>
+      <button class="btn" id="btn-en" type="button" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="card">
+    <h1 data-i18n="t_title">利用規約</h1>
+    <p class="sub" data-i18n="t_sub">最終更新日：<span class="mono">[YYYY-MM-DD]</span></p>
+
+    <p data-i18n="t_intro">
+      本利用規約（以下「本規約」）は、[開発者名/事業者名]（以下「当方」）が提供する本サービスの利用条件を定めるものです。
+      利用者は、本規約に同意の上、本サービスを利用するものとします。
+    </p>
+
+    <h2 data-i18n="t1">1. 禁止事項</h2>
+    <ul>
+      <li data-i18n="t1_li1">法令または公序良俗に違反する行為</li>
+      <li data-i18n="t1_li2">本サービスの運営を妨害する行為</li>
+      <li data-i18n="t1_li3">不正アクセス、解析、改変等の行為</li>
+      <li data-i18n="t1_li4">第三者の権利（著作権・プライバシー等）を侵害する行為</li>
+    </ul>
+
+    <h2 data-i18n="t2">2. 知的財産権</h2>
+    <p data-i18n="t2_body">
+      本サービスに関する著作権、商標権その他の知的財産権は、当方または正当な権利者に帰属します。
+    </p>
+
+    <h2 data-i18n="t3">3. 免責</h2>
+    <ul>
+      <li data-i18n="t3_li1">当方は、本サービスの完全性、正確性、特定目的適合性について保証しません。</li>
+      <li data-i18n="t3_li2">当方は、本サービスの利用により生じた損害について、法令で認められる範囲で責任を負いません。</li>
+      <li data-i18n="t3_li3">端末・OS更新・ストア仕様変更等により一部機能が利用できない場合があります。</li>
+    </ul>
+
+    <h2 data-i18n="t4">4. 課金・購入</h2>
+    <p data-i18n="t4_body">
+      有料機能がある場合、支払い・返金等は各ストア（App Store / Google Play）の規定に従います。
+    </p>
+
+    <h2 data-i18n="t5">5. サービスの変更・停止</h2>
+    <p data-i18n="t5_body">
+      当方は、必要に応じて本サービスの内容を変更し、または提供を中止できるものとします。
+    </p>
+
+    <h2 data-i18n="t6">6. 規約の変更</h2>
+    <p data-i18n="t6_body">
+      当方は、必要に応じて本規約を変更できるものとし、変更後の規約は本ページ等で告知した時点から効力を生じます。
+    </p>
+
+    <h2 data-i18n="t7">7. 準拠法・裁判管轄</h2>
+    <p data-i18n="t7_body">
+      本規約は日本法に準拠し、本サービスに関して紛争が生じた場合、当方所在地を管轄する裁判所を専属的合意管轄とします。
+      （※必要に応じて調整）
+    </p>
+
+    <div class="hr"></div>
+    <p class="sub" data-i18n="t_contact">
+      お問い合わせ：<span class="mono">[メールアドレス]</span>
+    </p>
+  </section>
+
+  <footer class="wrap">
+    <div>© <span class="mono" id="y"></span> Keyroid</div>
+  </footer>
+</main>
+
+<script>
+  const dict = {
+    ja:{
+      nav_home:"Index", nav_terms:"利用規約", nav_tokusho:"特商法", nav_privacy:"プライバシー",
+      t_title:"利用規約", t_sub:"最終更新日：[YYYY-MM-DD]",
+      t_intro:"本利用規約（以下「本規約」）は、[開発者名/事業者名]（以下「当方」）が提供する本サービスの利用条件を定めるものです。利用者は、本規約に同意の上、本サービスを利用するものとします。",
+      t1:"1. 禁止事項",
+      t1_li1:"法令または公序良俗に違反する行為",
+      t1_li2:"本サービスの運営を妨害する行為",
+      t1_li3:"不正アクセス、解析、改変等の行為",
+      t1_li4:"第三者の権利（著作権・プライバシー等）を侵害する行為",
+      t2:"2. 知的財産権",
+      t2_body:"本サービスに関する著作権、商標権その他の知的財産権は、当方または正当な権利者に帰属します。",
+      t3:"3. 免責",
+      t3_li1:"当方は、本サービスの完全性、正確性、特定目的適合性について保証しません。",
+      t3_li2:"当方は、本サービスの利用により生じた損害について、法令で認められる範囲で責任を負いません。",
+      t3_li3:"端末・OS更新・ストア仕様変更等により一部機能が利用できない場合があります。",
+      t4:"4. 課金・購入",
+      t4_body:"有料機能がある場合、支払い・返金等は各ストア（App Store / Google Play）の規定に従います。",
+      t5:"5. サービスの変更・停止",
+      t5_body:"当方は、必要に応じて本サービスの内容を変更し、または提供を中止できるものとします。",
+      t6:"6. 規約の変更",
+      t6_body:"当方は、必要に応じて本規約を変更できるものとし、変更後の規約は本ページ等で告知した時点から効力を生じます。",
+      t7:"7. 準拠法・裁判管轄",
+      t7_body:"本規約は日本法に準拠し、本サービスに関して紛争が生じた場合、当方所在地を管轄する裁判所を専属的合意管轄とします。（※必要に応じて調整）",
+      t_contact:"お問い合わせ：[メールアドレス]"
+    },
+    en:{
+      nav_home:"Index", nav_terms:"Terms", nav_tokusho:"Tokusho", nav_privacy:"Privacy",
+      t_title:"Terms of Use", t_sub:"Last updated: [YYYY-MM-DD]",
+      t_intro:"These Terms of Use (\"Terms\") set the conditions for using the Service provided by [Developer/Business Name] (\"we\"). By using the Service, you agree to these Terms.",
+      t1:"1. Prohibited Activities",
+      t1_li1:"Violating laws or public order and morals",
+      t1_li2:"Interfering with operation of the Service",
+      t1_li3:"Unauthorized access, reverse engineering, tampering, etc.",
+      t1_li4:"Infringing third-party rights (copyright, privacy, etc.)",
+      t2:"2. Intellectual Property",
+      t2_body:"All intellectual property rights related to the Service belong to us or the rightful owners.",
+      t3:"3. Disclaimer",
+      t3_li1:"We do not guarantee completeness, accuracy, or fitness for a particular purpose.",
+      t3_li2:"To the extent permitted by law, we are not liable for damages arising from use of the Service.",
+      t3_li3:"Some features may become unavailable due to device/OS updates or store policy changes.",
+      t4:"4. Payments / Purchases",
+      t4_body:"If the Service includes paid features, payments and refunds follow the rules of App Store / Google Play.",
+      t5:"5. Changes / Suspension",
+      t5_body:"We may change, suspend, or discontinue the Service as necessary.",
+      t6:"6. Updates to Terms",
+      t6_body:"We may update these Terms as needed. Updated Terms take effect when posted on this page or otherwise announced.",
+      t7:"7. Governing Law / Jurisdiction",
+      t7_body:"These Terms are governed by the laws of Japan. Any disputes will be subject to the exclusive jurisdiction of the court having jurisdiction over our location. (Adjust as needed.)",
+      t_contact:"Contact: [Email address]"
+    }
+  };
+
+  function setLang(lang){
+    document.documentElement.setAttribute("data-lang", lang);
+    document.documentElement.lang = lang === "ja" ? "ja" : "en";
+    localStorage.setItem("lang", lang);
+    document.getElementById("btn-ja").setAttribute("aria-pressed", lang==="ja");
+    document.getElementById("btn-en").setAttribute("aria-pressed", lang==="en");
+    document.querySelectorAll("[data-i18n]").forEach(el=>{
+      const key = el.getAttribute("data-i18n");
+      const v = dict[lang][key];
+      if (typeof v === "string") el.textContent = v;
+    });
+  }
+
+  document.getElementById("btn-ja").addEventListener("click", ()=>setLang("ja"));
+  document.getElementById("btn-en").addEventListener("click", ()=>setLang("en"));
+  setLang(localStorage.getItem("lang") || "ja");
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
