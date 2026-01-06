@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="ja" data-lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy Policy | Keyroid</title>
+  <meta name="description" content="Privacy Policy (JP/EN)" />
+  <style>
+    :root{
+      --bg:#0b0d12;
+      --panel:#101522;
+      --text:#eef2ff;
+      --muted:#a7b0c4;
+      --line:rgba(255,255,255,.10);
+      --accent:#8fb2ff;
+      --accent2:#2b61ff;
+      --danger:#ff6b6b;
+      --radius:16px;
+      --max:960px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans JP", "Hiragino Sans", "Helvetica Neue", Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--text);
+      background:
+        radial-gradient(1200px 800px at 50% -10%, rgba(143,178,255,.18), transparent 55%),
+        radial-gradient(900px 700px at 10% 30%, rgba(43,97,255,.12), transparent 60%),
+        linear-gradient(180deg, #070911 0%, #0b0d12 35%, #070911 100%);
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{
+      position:sticky; top:0; z-index:10;
+      backdrop-filter: blur(10px);
+      background: rgba(7,9,17,.65);
+      border-bottom:1px solid var(--line);
+    }
+    .wrap{max-width:var(--max); margin:0 auto; padding:16px}
+    .topbar{display:flex; align-items:center; gap:12px; justify-content:space-between}
+    .brand{display:flex; align-items:center; gap:10px}
+    .logo{
+      width:28px; height:28px; border-radius:10px;
+      background: linear-gradient(135deg, rgba(143,178,255,.85), rgba(43,97,255,.75));
+      box-shadow: 0 10px 30px rgba(43,97,255,.25);
+    }
+    .title{font-weight:800; letter-spacing:.4px}
+    .nav{display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end}
+    .chip{
+      padding:8px 10px;
+      border:1px solid var(--line);
+      background: rgba(16,21,34,.6);
+      border-radius:999px;
+      color:var(--text);
+      font-size:13px;
+    }
+    .chip:hover{border-color: rgba(143,178,255,.35)}
+    .lang{
+      display:flex; gap:8px; align-items:center;
+    }
+    .btn{
+      border:1px solid var(--line);
+      background: rgba(16,21,34,.6);
+      color:var(--text);
+      padding:8px 10px;
+      border-radius:12px;
+      cursor:pointer;
+      font-weight:700;
+      font-size:13px;
+    }
+    .btn[aria-pressed="true"]{
+      background: rgba(143,178,255,.92);
+      color:#0b0d12;
+      border-color: transparent;
+    }
+    main{padding:26px 0}
+    .card{
+      border:1px solid var(--line);
+      background: rgba(16,21,34,.62);
+      border-radius: var(--radius);
+      padding: 22px;
+      box-shadow: 0 16px 50px rgba(0,0,0,.35);
+    }
+    h1{margin:0 0 8px; font-size:26px}
+    .sub{color:var(--muted); font-size:13px; margin:0 0 18px}
+    h2{margin:22px 0 10px; font-size:16px}
+    p,li{color:rgba(238,242,255,.92); line-height:1.75}
+    ul{padding-left:18px; margin:10px 0}
+    .hr{height:1px; background:var(--line); margin:18px 0}
+    .note{color:var(--muted); font-size:13px}
+    footer{padding:20px 0 40px; color:var(--muted); font-size:12px}
+    .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap topbar">
+    <div class="brand">
+      <div class="logo" aria-hidden="true"></div>
+      <div class="title">Keyroid Legal</div>
+    </div>
+    <div class="nav">
+      <a class="chip" href="index.html" data-i18n="nav_home">Home</a>
+      <a class="chip" href="terms.html" data-i18n="nav_terms">Terms</a>
+      <a class="chip" href="tokusho.html" data-i18n="nav_tokusho">Tokusho</a>
+      <a class="chip" href="privacy.html" data-i18n="nav_privacy">Privacy</a>
+      <span class="lang">
+        <button class="btn" id="btn-ja" type="button" aria-pressed="true">JP</button>
+        <button class="btn" id="btn-en" type="button" aria-pressed="false">EN</button>
+      </span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="card">
+    <h1 data-i18n="pp_title">プライバシーポリシー</h1>
+    <p class="sub" data-i18n="pp_sub">最終更新日：<span class="mono">[YYYY-MM-DD]</span></p>
+
+    <p data-i18n="pp_intro">
+      本プライバシーポリシーは、[開発者名/事業者名]（以下「当方」）が提供するアプリおよび関連サービス（以下「本サービス」）における、
+      利用者情報の取扱いを定めるものです。
+    </p>
+
+    <div class="hr"></div>
+
+    <h2 data-i18n="pp_1_title">1. 取得する情報</h2>
+    <p data-i18n="pp_1_body">
+      当方は、本サービスの提供に必要な範囲で、以下の情報を取得する場合があります。
+    </p>
+    <ul>
+      <li data-i18n="pp_1_li1">端末情報（OS種別・バージョン、機種情報等）</li>
+      <li data-i18n="pp_1_li2">アプリの利用状況（クラッシュログ、機能の利用状況等）</li>
+      <li data-i18n="pp_1_li3">ユーザーが明示的に許可した場合の写真・カメラ関連情報（例：比較用の参照画像の選択、撮影）</li>
+    </ul>
+
+    <h2 data-i18n="pp_2_title">2. 利用目的</h2>
+    <ul>
+      <li data-i18n="pp_2_li1">本サービスの提供・維持・改善のため</li>
+      <li data-i18n="pp_2_li2">不具合調査・品質向上（クラッシュ解析等）のため</li>
+      <li data-i18n="pp_2_li3">ユーザーサポート対応のため</li>
+    </ul>
+
+    <h2 data-i18n="pp_3_title">3. 写真・カメラ権限について</h2>
+    <p data-i18n="pp_3_body">
+      本サービスは、参照画像の選択や撮影補助のために、端末の写真ライブラリおよびカメラへのアクセス権限を求める場合があります。
+      これらの権限は、端末の設定からいつでも変更できます。
+    </p>
+
+    <h2 data-i18n="pp_4_title">4. 第三者提供</h2>
+    <p data-i18n="pp_4_body">
+      当方は、法令に基づく場合を除き、利用者情報を第三者に提供しません。
+    </p>
+
+    <h2 data-i18n="pp_5_title">5. 外部サービス（分析・広告）</h2>
+    <p data-i18n="pp_5_body">
+      本サービスが分析SDKや広告SDK等の外部サービスを利用する場合、当該外部サービス提供者が利用者情報を取得することがあります。
+      利用する場合は、本ページにて明示します。現時点の方針：<span class="mono">[例：広告なし / 分析なし / 分析あり（サービス名）]</span>
+    </p>
+
+    <h2 data-i18n="pp_6_title">6. 保存期間・削除</h2>
+    <p data-i18n="pp_6_body">
+      当方は、利用目的の達成に必要な期間、利用者情報を保持します。ユーザーが端末からアプリを削除した場合、
+      端末内に保存された情報は端末の挙動に従い削除されます。
+    </p>
+
+    <h2 data-i18n="pp_7_title">7. お問い合わせ</h2>
+    <p data-i18n="pp_7_body">
+      本ポリシーに関するお問い合わせは、以下までご連絡ください。<br/>
+      連絡先：<span class="mono">[メールアドレス]</span>
+    </p>
+
+    <h2 data-i18n="pp_8_title">8. 改定</h2>
+    <p data-i18n="pp_8_body">
+      当方は、必要に応じて本ポリシーを改定することがあります。重要な変更がある場合は、本ページ等で告知します。
+    </p>
+
+    <div class="hr"></div>
+    <p class="note" data-i18n="pp_note">
+      ※本ページは、アプリ審査の要件を満たすことを目的として整備されています。実際の提供形態に合わせて必要箇所を更新してください。
+    </p>
+  </section>
+
+  <footer class="wrap">
+    <div>© <span class="mono" id="y"></span> Keyroid</div>
+  </footer>
+</main>
+
+<script>
+  const dict = {
+    ja: {
+      nav_home:"Index",
+      nav_terms:"利用規約",
+      nav_tokusho:"特商法",
+      nav_privacy:"プライバシー",
+      pp_title:"プライバシーポリシー",
+      pp_sub:"最終更新日：[YYYY-MM-DD]",
+      pp_intro:"本プライバシーポリシーは、[開発者名/事業者名]（以下「当方」）が提供するアプリおよび関連サービス（以下「本サービス」）における、利用者情報の取扱いを定めるものです。",
+      pp_1_title:"1. 取得する情報",
+      pp_1_body:"当方は、本サービスの提供に必要な範囲で、以下の情報を取得する場合があります。",
+      pp_1_li1:"端末情報（OS種別・バージョン、機種情報等）",
+      pp_1_li2:"アプリの利用状況（クラッシュログ、機能の利用状況等）",
+      pp_1_li3:"ユーザーが明示的に許可した場合の写真・カメラ関連情報（例：比較用の参照画像の選択、撮影）",
+      pp_2_title:"2. 利用目的",
+      pp_2_li1:"本サービスの提供・維持・改善のため",
+      pp_2_li2:"不具合調査・品質向上（クラッシュ解析等）のため",
+      pp_2_li3:"ユーザーサポート対応のため",
+      pp_3_title:"3. 写真・カメラ権限について",
+      pp_3_body:"本サービスは、参照画像の選択や撮影補助のために、端末の写真ライブラリおよびカメラへのアクセス権限を求める場合があります。これらの権限は、端末の設定からいつでも変更できます。",
+      pp_4_title:"4. 第三者提供",
+      pp_4_body:"当方は、法令に基づく場合を除き、利用者情報を第三者に提供しません。",
+      pp_5_title:"5. 外部サービス（分析・広告）",
+      pp_5_body:"本サービスが分析SDKや広告SDK等の外部サービスを利用する場合、当該外部サービス提供者が利用者情報を取得することがあります。利用する場合は、本ページにて明示します。現時点の方針：[例：広告なし / 分析なし / 分析あり（サービス名）]",
+      pp_6_title:"6. 保存期間・削除",
+      pp_6_body:"当方は、利用目的の達成に必要な期間、利用者情報を保持します。ユーザーが端末からアプリを削除した場合、端末内に保存された情報は端末の挙動に従い削除されます。",
+      pp_7_title:"7. お問い合わせ",
+      pp_7_body:"本ポリシーに関するお問い合わせは、以下までご連絡ください。連絡先：[メールアドレス]",
+      pp_8_title:"8. 改定",
+      pp_8_body:"当方は、必要に応じて本ポリシーを改定することがあります。重要な変更がある場合は、本ページ等で告知します。",
+      pp_note:"※本ページは、アプリ審査の要件を満たすことを目的として整備されています。実際の提供形態に合わせて必要箇所を更新してください。"
+    },
+    en: {
+      nav_home:"Index",
+      nav_terms:"Terms",
+      nav_tokusho:"Tokusho",
+      nav_privacy:"Privacy",
+      pp_title:"Privacy Policy",
+      pp_sub:"Last updated: [YYYY-MM-DD]",
+      pp_intro:"This Privacy Policy explains how [Developer/Business Name] (\"we\") handles user information in our app and related services (the \"Service\").",
+      pp_1_title:"1. Information We Collect",
+      pp_1_body:"We may collect the following information only to the extent necessary to provide the Service:",
+      pp_1_li1:"Device information (OS type/version, model, etc.)",
+      pp_1_li2:"Usage data (crash logs, feature usage, etc.)",
+      pp_1_li3:"Photo/Camera-related data only when you explicitly grant permission (e.g., selecting a reference image, taking a photo)",
+      pp_2_title:"2. Purposes of Use",
+      pp_2_li1:"To provide, maintain, and improve the Service",
+      pp_2_li2:"To investigate issues and improve quality (e.g., crash analysis)",
+      pp_2_li3:"To provide customer support",
+      pp_3_title:"3. Photo/Camera Permissions",
+      pp_3_body:"The Service may request access to your photo library and camera to support selecting a reference image and assisting comparison shots. You can change permissions anytime in your device settings.",
+      pp_4_title:"4. Sharing with Third Parties",
+      pp_4_body:"We do not share your information with third parties unless required by law.",
+      pp_5_title:"5. External Services (Analytics/Ads)",
+      pp_5_body:"If the Service uses analytics or advertising SDKs, those providers may collect user information. If used, we will disclose them on this page. Current policy: [e.g., No ads / No analytics / Analytics used (name)].",
+      pp_6_title:"6. Retention & Deletion",
+      pp_6_body:"We retain user information only as long as necessary for the purposes above. If you uninstall the app, data stored on your device will be removed according to your device behavior.",
+      pp_7_title:"7. Contact",
+      pp_7_body:"For questions about this policy, contact: [Email address].",
+      pp_8_title:"8. Changes",
+      pp_8_body:"We may update this policy as needed. If changes are significant, we will notify you on this page or through the Service.",
+      pp_note:"Note: Please update placeholders to match your actual operations."
+    }
+  };
+
+  function setLang(lang){
+    document.documentElement.setAttribute("data-lang", lang);
+    document.documentElement.lang = lang === "ja" ? "ja" : "en";
+    localStorage.setItem("lang", lang);
+    document.getElementById("btn-ja").setAttribute("aria-pressed", lang==="ja");
+    document.getElementById("btn-en").setAttribute("aria-pressed", lang==="en");
+    document.querySelectorAll("[data-i18n]").forEach(el=>{
+      const key = el.getAttribute("data-i18n");
+      const v = dict[lang][key];
+      if (typeof v === "string") el.textContent = v;
+    });
+  }
+
+  document.getElementById("btn-ja").addEventListener("click", ()=>setLang("ja"));
+  document.getElementById("btn-en").addEventListener("click", ()=>setLang("en"));
+  setLang(localStorage.getItem("lang") || "ja");
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
